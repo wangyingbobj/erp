@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" >
+    <include resource="org/springframework/boot/logging/logback/defaults.xml" />
+    <springProperty scope="context" name="LOGLEVEL" source="logging.level.root" />
+    <springProperty scope="context" name="LOGPATH" source="logging.path" />
+    <springProperty scope="context" name="LOGFILE" source="logging.file" />
+
+    <property name="LOGPATH" value="${LOGPATH:-${LOG_TEMP:-${java.io.tmpdir:-/tmp}}}"/>
+    <property name="LOGFILE" value="${LOGFILE:-spring.log}"/>
+    <jmxConfigurator/>
+    <logger name="org.springframework.web" level="${LOGLEVEL}" />
+
+    <!--控制台输出 -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 文件输出 滚动日志 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOGPATH}/${LOGFILE}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOGPATH}/${LOGFILE}.%d{yyyy-MM-dd}.zip</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder><!-- 必须指定，否则不会往文件输出内容 -->
+            <pattern>${CONSOLE_LOG_PATTERN}</pattern>
+        </encoder>
+    </appender>
+
+    <springProfile name="default,test,local,dev">
+        <root level="${LOGLEVEL}">
+            <appender-ref ref="STDOUT" />
+        </root>
+    </springProfile>
+    <springProfile name="dev,test,prod">
+        <root level="${LOGLEVEL}">
+            <appender-ref ref="FILE" />
+        </root>
+    </springProfile>
+</configuration>
