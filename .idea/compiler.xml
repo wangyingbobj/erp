@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zuul" />
-        <module name="config" />
         <module name="eureka" />
+        <module name="config" />
       </profile>
     </annotationProcessing>
   </component>
