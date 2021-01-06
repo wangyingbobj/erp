@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b8062d48-8dcc-451e-a0cd-d678d065518d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/config/src/main/resources/local/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/main/resources/local/zuul-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/local/zuul-service.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/resources/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/application-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/resources/local/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/resources/local/zuul-service.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/config/zuul-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul/src/main/resources/bootstrap-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/zuul/src/main/resources/bootstrap-local.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,26 +55,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/src/main/resources/application-local.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/bootstrap-local.properties">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+              <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/src/main/resources/local/application.properties">
+        <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/bootstrap-local.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="200">
+              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
@@ -96,10 +89,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/src/main/resources/local/zuul-service.properties">
+        <entry file="file://$PROJECT_DIR$/config/src/main/resources/config/zuul-local.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+            <state relative-caret-position="275">
+              <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -130,13 +123,14 @@
         <option value="$PROJECT_DIR$/eureka/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/config/src/main/resources/local/zuul.properties" />
         <option value="$PROJECT_DIR$/config/src/main/java/com/erp/config/ConfigApplication.java" />
-        <option value="$PROJECT_DIR$/config/src/main/resources/application-local.properties" />
         <option value="$PROJECT_DIR$/config/pom.xml" />
         <option value="$PROJECT_DIR$/config/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/zuul/src/main/resources/bootstrap-local.properties" />
         <option value="$PROJECT_DIR$/config/src/main/resources/zuul-local.properties" />
         <option value="$PROJECT_DIR$/config/src/main/resources/local/zuul-service.properties" />
         <option value="$PROJECT_DIR$/config/src/main/resources/local/application.properties" />
+        <option value="$PROJECT_DIR$/config/src/main/resources/application-local.properties" />
+        <option value="$PROJECT_DIR$/config/src/main/resources/config/zuul-local.properties" />
+        <option value="$PROJECT_DIR$/zuul/src/main/resources/bootstrap-local.properties" />
       </list>
     </option>
   </component>
@@ -220,7 +214,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="local" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="erp" type="b2602c69:ProjectViewProjectNode" />
@@ -294,7 +288,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ZuulApplication">
+  <component name="RunManager" selected="Spring Boot.ConfigApplication">
     <configuration name="ConfigApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="config" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.erp.config.ConfigApplication" />
@@ -344,7 +338,7 @@
       <workItem from="1609752637430" duration="2087000" />
       <workItem from="1609812606181" duration="15221000" />
       <workItem from="1609840369925" duration="596000" />
-      <workItem from="1609900477400" duration="9834000" />
+      <workItem from="1609900477400" duration="10786000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1609903676237</created>
@@ -357,20 +351,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36552000" />
+    <option name="totallyTimeSpent" value="37504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1453" height="873" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3376344" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3376344" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Web" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32345015" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.532345" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -487,13 +480,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/zuul/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-188">
           <caret line="30" column="70" selection-start-line="30" selection-start-column="70" selection-end-line="30" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/src/main/resources/config/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="1" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/src/main/resources/config/zuul-local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="7" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -506,32 +513,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/config/src/main/resources/application-local.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="6" lean-forward="true" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/bootstrap-local.properties">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/bootstrap.properties">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/src/main/resources/local/zuul-service.properties">
+    <entry file="file://$PROJECT_DIR$/zuul/src/main/resources/bootstrap-local.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/src/main/resources/local/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="200">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
