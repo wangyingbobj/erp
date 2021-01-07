@@ -10,9 +10,12 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>zuul</module>
         <module>eureka</module>
         <module>config</module>
+        <module>common</module>
+        <module>zuul</module>
+        <module>system</module>
+        <module>main</module>
     </modules>
 
     <properties>
@@ -22,7 +25,33 @@
         <revision>1.0-SNAPSHOT</revision>
         <spring-boot.version>Hoxton.SR9</spring-boot.version>
         <eureka-client.version>2.2.6.RELEASE</eureka-client.version>
+        <swagger.version>1.9.1.RELEASE</swagger.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.spring4all</groupId>
+            <artifactId>swagger-spring-boot-starter</artifactId>
+            <version>1.9.1.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -54,6 +83,15 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!--
+            <dependency>
+                <groupId>com.spring4all</groupId>
+                <artifactId>swagger-spring-boot-starter</artifactId>
+                <version>${swagger.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            -->
         </dependencies>
     </dependencyManagement>
 
