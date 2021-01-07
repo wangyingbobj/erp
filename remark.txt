@@ -1,6 +1,6 @@
 项目
-eureka
-zuul
-config
-system
-order
+eureka 6000
+zuul 6020
+config 6010
+system 6030
+main 6100

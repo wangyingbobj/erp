@@ -6,9 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="main" />
         <module name="zuul" />
-        <module name="eureka" />
+        <module name="system" />
         <module name="config" />
+        <module name="eureka" />
       </profile>
     </annotationProcessing>
   </component>
@@ -16,6 +18,8 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config" options="" />
       <module name="eureka" options="" />
+      <module name="main" options="" />
+      <module name="system" options="" />
       <module name="zuul" options="" />
     </option>
   </component>
