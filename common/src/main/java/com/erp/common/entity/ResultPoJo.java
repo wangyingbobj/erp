@@ -4,6 +4,7 @@ import com.erp.common.exception.ErpException;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
 
 /**
  * 返回结果信息
@@ -13,6 +14,7 @@ import io.swagger.annotations.ApiModelProperty;
  */
 @ApiModel(value = "ResultPoJo", description = "返回数据")
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+@Data
 public class ResultPoJo<T> {
 
     @ApiModelProperty(value = "返回码：100100【正确】，其他错误", example = "100100 ")
@@ -25,8 +27,8 @@ public class ResultPoJo<T> {
     private T result;
 
     public ResultPoJo() {
-        this.code = ErpException.NORMAL.code;
-        this.msg = ErpException.NORMAL.msg;
+        this.code = ErpException.NORMAL.getCode();
+        this.msg = ErpException.NORMAL.getMsg();
     }
 
     public ResultPoJo(ErpException be) {
@@ -34,22 +36,9 @@ public class ResultPoJo<T> {
         this.msg = be.getMsg();
     }
 
-    //链式构造
-    public static ResultPoJo resultOK(ErpException erpException,Object obj) {
-        ResultPoJo poJo = new ResultPoJo();
-        poJo.code = erpException.code;
-        poJo.msg = erpException.msg;
-        poJo.result=obj;
-        return poJo;
+    public ResultPoJo setResult(T obj) {
+        this.result=obj;
+        return this;
     }
 
-    //链式构造
-    public static ResultPoJo resultError(ErpException erpException) {
-        ResultPoJo poJo = new ResultPoJo();
-        poJo.code = erpException.code;
-        poJo.msg = erpException.msg;
-        if(erpException.equals(ErpException.NORMAL))
-            erpException= ErpException.UnknownException;
-        return poJo;
-    }
 }

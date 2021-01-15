@@ -14,16 +14,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/order")
 public class orderController {
 
-    @PostMapping("/msg")
-    @ApiOperation(value = "添加客户", notes = "客户管理", produces = "application/json", response = ResultPoJo.class)
-    public ResultPoJo msg(@RequestBody String request) {
-        ResultPoJo re = ResultPoJo.resultOK(ErpException.NORMAL,request);
+    @PostMapping("/b")
+    @ApiOperation(value = "输入id", notes = "客户管理")
+    public ResultPoJo msg( String id) {
+        ResultPoJo<String> re =new ResultPoJo<>().setResult(id);
+        ResultPoJo<String> re1= new ResultPoJo<>(ErpException.OperateFail).setResult(id);
         return re;
     }
 
     @PostMapping("/a")
-    @ApiOperation(value = "添加客户", notes = "客户管理")
-    public String a() {
-        return "aaa";
+    @ApiOperation(value = "输入对象", notes = "客户管理" )
+    public String a(@RequestBody ResultPoJo i) {
+        return i.getResult().toString();
     }
 }
