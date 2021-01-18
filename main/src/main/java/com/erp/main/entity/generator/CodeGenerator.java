@@ -55,14 +55,16 @@ public class CodeGenerator {
 
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
+        gc.setAuthor("帅帅");
         //配置文件输出路径
-        gc.setOutputDir(System.getProperty("user.dir") + "/homeins-zinsurance/homeins-erp-service/src/main/java");
-        //gc.setAuthor("huangqingquan");
+        gc.setOutputDir(System.getProperty("user.dir") + "/main/src/main/java");
         gc.setOpen(false);
         gc.setActiveRecord(true);
         gc.setSwagger2(true);
         gc.setXmlName(null);
         gc.setFileOverride(true);
+        gc.setBaseColumnList(true);
+        gc.setBaseResultMap(true);
         mpg.setGlobalConfig(gc);
         gc.setDateType(DateType.ONLY_DATE);
 
@@ -75,8 +77,8 @@ public class CodeGenerator {
         mpg.setDataSource(dsc);
 
         // 包配置=>(配置包名)=>指定生成的model里面的package包名
-        PackageConfig pc = new PackageConfig().setParent("com.ins.home.erpservice");
-        pc.setParent("com.ins.home.erpservice");
+        PackageConfig pc = new PackageConfig();
+        pc.setParent("com.erp.main");
         mpg.setPackageInfo(pc);
 
         // 自定义配置
@@ -97,7 +99,7 @@ public class CodeGenerator {
             @Override
             public String outputFile(TableInfo tableInfo) {
                 // 自定义输出文件名 ， 如果你 Entity 设置了前后缀、此处注意 xml 的名称会跟着发生变化！！
-                return System.getProperty("user.dir") + "/homeins-zinsurance/homeins-erp-service/src/main/resources/mapper/"
+                return System.getProperty("user.dir") + "/main/src/main/resources/mapper/"
 //                        + pc.getModuleName()+ "/"
                         + tableInfo.getEntityName() + "Mapper" + StringPool.DOT_XML;
             }
@@ -122,8 +124,8 @@ public class CodeGenerator {
         StrategyConfig strategy = new StrategyConfig();
         strategy.setNaming(NamingStrategy.underline_to_camel);
         strategy.setColumnNaming(NamingStrategy.underline_to_camel);
-        strategy.setSuperEntityClass("com.ins.home.common.dto.BaseEntity");
-        strategy.setSuperControllerClass("com.ins.home.common.dto.BaseController");
+        strategy.setSuperEntityClass("com.erp.common.dto.BaseEntity");
+        strategy.setSuperControllerClass("com.erp.common.dto.BaseController");
         strategy.setEntityLombokModel(true);
         strategy.setRestControllerStyle(true);
         strategy.setInclude(scanner("表名，多个英文逗号分割").split(","));
