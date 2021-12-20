@@ -16,6 +16,7 @@
         <module>zuul</module>
         <module>system</module>
         <module>main</module>
+        <module>stock</module>
     </modules>
 
     <properties>

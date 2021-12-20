@@ -22,9 +22,9 @@ public class orderController {
         return re;
     }
 
-    @PostMapping("/a")
-    @ApiOperation(value = "输入对象", notes = "客户管理" )
-    public String a(@RequestBody ResultPoJo i) {
-        return i.getResult().toString();
-    }
+//    @PostMapping("/a")
+//    @ApiOperation(value = "输入对象", notes = "客户管理" )
+//    public String a(@RequestBody ResultPoJo i) {
+//        return i.getResult().toString();
+//    }
 }
