@@ -10,6 +10,7 @@
         <module name="common" />
         <module name="system" />
         <module name="eureka" />
+        <module name="stock" />
         <module name="main" />
         <module name="config" />
       </profile>
@@ -21,6 +22,7 @@
       <module name="config" options="" />
       <module name="eureka" options="" />
       <module name="main" options="" />
+      <module name="stock" options="" />
       <module name="system" options="" />
       <module name="zuul" options="" />
     </option>
