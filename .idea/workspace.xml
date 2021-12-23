@@ -20,21 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8062d48-8dcc-451e-a0cd-d678d065518d" name="Default Changelist" comment="1">
-      <change afterPath="$PROJECT_DIR$/.idea/erp.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/src/main/java/com/erp/stock/entity/generator/CodeGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/stock/src/main/java/com/erp/stock/util/sslClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/main/resources/configfile/main-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/configfile/main-local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/main/resources/configfile/stock-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/configfile/stock-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/src/main/resources/configfile/stock-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/configfile/stock-local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/stock/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock/src/main/resources/bootstrap-dev.properties" beforeDir="false" afterPath="$PROJECT_DIR$/stock/src/main/resources/bootstrap-dev.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stock/src/main/resources/bootstrap-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/stock/src/main/resources/bootstrap-local.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/src/main/resources/application-local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/config/src/main/resources/application-local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +98,20 @@
       <recent name="C:\wyb\erp\config\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.StockApplication">
+  <component name="RunManager" selected="Application.CodeGenerator (1)">
+    <configuration name="CodeGenerator (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.erp.stock.entity.generator.CodeGenerator" />
+      <module name="stock" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.erp.stock.entity.generator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.erp.main.entity.generator.CodeGenerator" />
       <module name="main" />
@@ -191,9 +191,11 @@
       <item itemvalue="Spring Boot.SystemApplication" />
       <item itemvalue="Spring Boot.CommonApplication" />
       <item itemvalue="Spring Boot.StockApplication" />
+      <item itemvalue="Application.CodeGenerator (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CodeGenerator (1)" />
         <item itemvalue="Application.CodeGenerator" />
       </list>
     </recent_temporary>
@@ -227,7 +229,7 @@
       <workItem from="1640051663641" duration="686000" />
       <workItem from="1640073358406" duration="31000" />
       <workItem from="1640225697840" duration="4916000" />
-      <workItem from="1640252742116" duration="943000" />
+      <workItem from="1640252742116" duration="1258000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <created>1609903676237</created>
@@ -236,7 +238,21 @@
       <option name="project" value="LOCAL" />
       <updated>1609903676237</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1">
+      <created>1640253709501</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1640253709501</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1">
+      <created>1640253836865</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1640253836865</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -281,38 +297,38 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="0" y="190" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1640073388538" />
-    <state width="1237" height="190" key="GridCell.Tab.0.bottom" timestamp="1640230628264">
+    <state width="1237" height="275" key="GridCell.Tab.0.bottom" timestamp="1640253909114">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1640230628264" />
-    <state width="1237" height="190" key="GridCell.Tab.0.center" timestamp="1640230628264">
+    <state width="1237" height="275" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1640253909114" />
+    <state width="1237" height="275" key="GridCell.Tab.0.center" timestamp="1640253909113">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1640230628264" />
-    <state width="1237" height="190" key="GridCell.Tab.0.left" timestamp="1640230628264">
+    <state width="1237" height="275" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1640253909113" />
+    <state width="1237" height="275" key="GridCell.Tab.0.left" timestamp="1640253909113">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1640230628264" />
-    <state width="1237" height="190" key="GridCell.Tab.0.right" timestamp="1640230628264">
+    <state width="1237" height="275" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1640253909113" />
+    <state width="1237" height="275" key="GridCell.Tab.0.right" timestamp="1640253909113">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1640230628264" />
-    <state width="1237" height="190" key="GridCell.Tab.1.bottom" timestamp="1640230628264">
+    <state width="1237" height="275" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1640253909113" />
+    <state width="1237" height="275" key="GridCell.Tab.1.bottom" timestamp="1640253909114">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1640230628264" />
-    <state width="1237" height="190" key="GridCell.Tab.1.center" timestamp="1640230628264">
+    <state width="1237" height="275" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1640253909114" />
+    <state width="1237" height="275" key="GridCell.Tab.1.center" timestamp="1640253909114">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1640230628264" />
-    <state width="1237" height="190" key="GridCell.Tab.1.left" timestamp="1640230628264">
+    <state width="1237" height="275" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1640253909114" />
+    <state width="1237" height="275" key="GridCell.Tab.1.left" timestamp="1640253909114">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1640230628264" />
-    <state width="1237" height="190" key="GridCell.Tab.1.right" timestamp="1640230628264">
+    <state width="1237" height="275" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1640253909114" />
+    <state width="1237" height="275" key="GridCell.Tab.1.right" timestamp="1640253909114">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="190" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1640230628264" />
+    <state width="1237" height="275" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1640253909114" />
     <state width="1237" height="190" key="GridCell.Tab.2.bottom" timestamp="1640230628264">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -329,6 +345,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="190" key="GridCell.Tab.2.right/0.0.1280.680@0.0.1280.680" timestamp="1640230628264" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1640253712051">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1640253712051" />
     <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1640229713664">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
